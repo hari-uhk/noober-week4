@@ -51,10 +51,8 @@ for (let i=0; i < rides.length; i++) {
         </div>
       </div>
         `)
-
       }
-      
-       } else if (ride[0].purpleRequested == true){
+    } else if (ride[0].purpleRequested == true){
       levelofService = 'Noober Purple'
         document.querySelector(' .rides').insertAdjacentHTML('beforeEnd',`
           <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
@@ -87,8 +85,8 @@ for (let i=0; i < rides.length; i++) {
             </div>
           </div>
         </div>
-    `)
-       } else if (ride[0].numberOfPassengers > 3) {
+        `)
+    } else if (ride[0].numberOfPassengers > 3) {
       levelofService = 'Noober XL'
          document.querySelector(' .rides').insertAdjacentHTML('beforeEnd',`
          <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
@@ -121,9 +119,8 @@ for (let i=0; i < rides.length; i++) {
               </div>
             </div>
           </div>
-         
          `)
-       } else {
+    } else {
       levelofService = 'Noober X'
          document.querySelector(' .rides').insertAdjacentHTML('beforeEnd',`
             <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
@@ -155,12 +152,10 @@ for (let i=0; i < rides.length; i++) {
                 <p>${ride[0].dropoffLocation.city}, ${ride[0].dropoffLocation.state} ${ride[0].dropoffLocation.zip}</p>
               </div>
             </div>
-          </div>
-         
-         
-         `)
-       }
-      }  
+          </div>        
+        `)
+      }
+    }  
   }
 
 window.addEventListener('DOMContentLoaded', pageLoaded)
